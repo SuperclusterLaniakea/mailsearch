@@ -1,0 +1,23 @@
+[package]
+name = "mail-search"
+version = "1.0.0"
+edition = "2021"
+
+[[bin]]
+name = "mail-search"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.27", features = ["persistence"] }
+egui = "0.27"
+egui_extras = { version = "0.27", features = ["image"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "bmp", "webp"] }
+rfd = "0.14"
+mail-parser = "0.9"
+rusqlite = { version = "0.31", features = ["bundled"] }
+walkdir = "2"
+rayon = "1.10"
+regex = "1"
+once_cell = "1"
+chrono = "0.4"
+encoding_rs = "0.8"
